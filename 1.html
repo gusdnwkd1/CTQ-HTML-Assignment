@@ -7,6 +7,18 @@
 </head>
 <body>
   <h1><a href="index.html">F1</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day'
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night'
+  }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html" class="saw" id=active>F1</a></li>
@@ -19,5 +31,16 @@
       <br>F1은 <strong>세계 최고의 <u><a href="https://en.wikipedia.org/wiki/Motorsport">모터스포츠</a></u></strong>이다.
     </div>
   </div>
+  <input id="night_day" type="button" value="night" onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day'
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night'
+  }
+  ">
 </body>
 </html>

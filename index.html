@@ -7,6 +7,18 @@
 </head>
 <body>
   <h1><a href="index.html" class="saw" id="active">F1</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day'
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night'
+  }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html" class="saw">F1</a></li>
@@ -14,5 +26,16 @@
       <li><a href="3.html" class="saw">일정</a></li>
     </ol>
   </div>
+  <input id="night_day" type="button" value="night" onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day'
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night'
+  }
+  ">
 </body>
 </html>

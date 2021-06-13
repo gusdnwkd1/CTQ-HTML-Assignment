@@ -7,6 +7,18 @@
 </head>
 <body>
   <h1><a href="index.html">F1</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day'
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night'
+  }
+  ">
   <div id="grid">
     <ol>
       <li><a href="1.html" class="saw">F1</a></li>
@@ -18,5 +30,16 @@
       <p><li>목요일 - 기자회견</li><li>금요일 - 연습주행</li><li>토요일 - 예선전</li><li>일요일 - 레이스</li></p>
     </div>
   </div>
+  <input id="night_day" type="button" value="night" onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day'
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night'
+  }
+  ">
 </body>
 </html>
