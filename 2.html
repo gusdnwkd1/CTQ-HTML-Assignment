@@ -4,21 +4,11 @@
   <title>F1이란 - html</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">F1</a></h1>
-  <input id="night_day" type="button" value="night" onclick="
-  var target = document.querySelector('body')
-  if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day'
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'night'
-  }
-  ">
+  <input id="night_day" type="button" value="night" onclick="nightdayhandler(this);">
   <div id="grid">
     <ol>
       <li><a href="1.html" class="saw">F1</a></li>
@@ -37,16 +27,6 @@
       <br>코너에서의 탈출속도와 최고속도, 평균속도는 공식 대회중에서는 세계 최고이다.</p>
     </div>
   </div>
-  <input id="night_day" type="button" value="night" onclick="
-  if(this.value === 'night'){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    this.value = 'day'
-  } else {
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    this.value = 'night'
-  }
-  ">
+  <input id="night_day" type="button" value="night" onclick="nightdayhandler(this);">
 </body>
 </html>
